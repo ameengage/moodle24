@@ -37,7 +37,7 @@
 //          http://www.gnu.org/copyleft/gpl.html                           //
 //                                                                         //
 /////////////////////////////////////////////////////////////////////////////
-
+//comment
 /**
  * This file is part of the Calendar section Moodle
  *
