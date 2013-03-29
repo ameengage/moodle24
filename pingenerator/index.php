@@ -1,0 +1,74 @@
+<?php session_start(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="content-script-type" content="text/javascript">
+
+	 <link rel="stylesheet" href="/styles/general.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="/styles/styles.css">	
+	<link rel="stylesheet" href="/styles/style_002.css">
+	<link rel="stylesheet" href="/styles/gpo_menu.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="login/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="login/init.js"></script>
+
+<link type='text/css' href='login/stylesheet.css' rel='stylesheet' media='screen' />
+<link type='text/css' href='login/basic.css' rel='stylesheet' media='screen' />
+	
+
+	<title>Application</title>
+</head>
+
+
+<body> 
+
+<table border='0' align='center' style="background-color:#ffffff;">
+
+<tr><td colspan=2 ><?php include('header-index.php');?></td></tr>
+
+</table>
+
+<table border='0' align='center' width='895' style="background-color:#ffffff;">
+
+<tr>
+	
+
+<td valign='top' style='padding-top:15px; padding-left:35px;' width='100%'>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</td>
+</tr>
+</table>
+
+<?php include('footer.php');?>
+
+</body></html>
+
+
+<div id="login_form" style='display:none'>
+
+<div id="status" align="left">
+
+<h1 style='padding-left:75px;'><table><tr><td><img src="images/icon-loginpic.gif" align="absmiddle"></td><td><img src='images/log.png' border='0'/></td></tr></table></h1>
+
+<center><div id="login_response"><!-- spanner --></div> </center>
+
+<form id="login" action="javascript:alert('success!');">
+<input type="hidden" name="action" value="user_login">
+<input type="hidden" name="module" value="login">
+<label>Username:</label><input type="text" name="email" id='email'><br />  
+<label>Password:</label><input type="password" name="password" id='password'><br />  
+<label>&nbsp;</label><input value="Login" name="Login" id="submit" class="big" type="submit" /> 
+<input value="Reset " name="reset" id="reset" class="big" type="button" onclick="javascript:user_reset();"/>
+
+<div id="ajax_loading">
+<img align="absmiddle" src="images/spinner.gif">&nbsp;Processing...
+</div>
+
+</form>
+
+ </div>
+
+</div>
+
+

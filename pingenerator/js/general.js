@@ -1,0 +1,108 @@
+function num_valid(id)
+{
+	stat = num_check(document.getElementById(id).value);
+
+	if(stat == false)
+	{
+		        alert('Entry should only be numeric (Empty Spaces and Special Characters are not allowed)');
+				document.getElementById(id).value = '';
+				document.getElementById(id).focus();
+	}
+
+}
+
+function num_valid_dec(id)
+{
+	if(document.getElementById(id).value != '')
+	{
+		stat = num_check_dec(document.getElementById(id).value);
+
+		if(stat == false)
+		{
+					alert('Entry should only be numeric (Empty Spaces and Special Characters are not allowed)');
+					document.getElementById(id).value = '';
+					document.getElementById(id).focus();
+		}
+	}
+
+}
+
+function num_check(strString)
+   {
+   var strValidChars = "0123456789";
+   var strChar;
+   var blnResult = true;
+
+   if (strString.length == 0) return false;
+
+   for (i = 0; i < strString.length && blnResult == true; i++)
+      {
+      strChar = strString.charAt(i);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+         blnResult = false;
+         }
+      }
+   return blnResult;
+   }
+
+function num_check_dec(strString)
+   {
+   var strValidChars = "0123456789.";
+   var strChar;
+   var blnResult = true;
+
+   if (strString.length == 0) return false;
+
+   for (i = 0; i < strString.length && blnResult == true; i++)
+      {
+      strChar = strString.charAt(i);
+      if (strValidChars.indexOf(strChar) == -1)
+         {
+         blnResult = false;
+         }
+      }
+   return blnResult;
+   }
+
+
+function generate()
+{
+// alert("hhh");
+	if(document.getElementById("trn").value != '' && document.getElementById("digit").value != '-' && document.getElementById("pin").value != '-')
+	{
+    document.getElementById("rdnumber_div").innerHTML = "<br><center><img src='images/ajax-loader.gif' border='0'/></center>";
+	//settimeout(20000);
+// alert("yes");
+	if (window.XMLHttpRequest)
+			  {
+			  xmlhttp_gdrop=new XMLHttpRequest();
+			  }
+			else
+			  {
+			  xmlhttp_gdrop=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+			xmlhttp_gdrop.onreadystatechange=function()
+			  {	
+			
+			  if (xmlhttp_gdrop.readyState==4 && xmlhttp_gdrop.status==200)
+				{
+				    document.getElementById("rdnumber_div").innerHTML=xmlhttp_gdrop.responseText;
+				}
+			  }
+			 
+			var rand = (Math.random()*11);
+			var trn = document.getElementById("trn").value;
+			var digit = document.getElementById("digit").value;
+			var pin = document.getElementById("pin").value;
+                      
+			url = "?trn="+trn+"&digit="+digit+"&pin="+pin+"&rand="+rand;
+	
+                      // alert("ops/rdnumber_generator.php"+url);
+                         
+			xmlhttp_gdrop.open("GET","ops/rdnumber_generator.php"+url,true);
+			xmlhttp_gdrop.send();
+	}
+}
+
+	

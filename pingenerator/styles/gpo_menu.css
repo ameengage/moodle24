@@ -1,0 +1,153 @@
+
+#leftMenu th 
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+    background-position:left ; 
+	background-repeat:no-repeat; 
+	margin:0px; 
+	padding-left:0px; 
+	font-size:14px; 
+	font-weight:bold; 
+	text-align:left; 
+	text-transform:uppercase; 
+	color:#4C7CBD; 
+	height:25px; 
+	border-bottom:dotted #cccccc;
+	border-bottom-width:1.5px;
+	vertical-align:middle;
+	}
+
+.TText 
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:15px; 
+	font-weight:bold; 
+	text-align:left; 
+	color:#4C7CBD; 
+	height:5px;	
+	padding-top:5px;
+	
+}
+
+.attr_name 
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	font-weight:normal; 
+	font-size:10px; 
+	text-align:left; 
+	text-transform:uppercase; 
+	color:#003cad; 
+	height:25px; 
+	padding-top:6px; 
+}
+
+.info 
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:12px; 
+	font-weight:normal; 
+	font-size:9px; 
+	text-align:left; 
+	color:#003cad; 
+	height:25px; 
+	padding-top:6px; 
+}
+
+
+#leftMenu td 
+{ 
+    border-bottom:dotted #cccccc;
+	border-bottom-width:1.5px;
+	height:25px; 
+	background-image:url(../inc/grey_bullet.gif); 
+	background-position:left; 
+	background-repeat:no-repeat; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	font-size:11px; 
+	color:#868686;
+	padding-left:20px; 
+	padding-top:3px; 
+	padding-bottom:3px; 
+	vertical-align:middle;
+	}
+
+#leftMenu a:link, #leftMenu a:visited {
+	color:#868686; 
+	text-align:left; 
+	font-weight:bold; 
+	text-decoration:none;
+	}
+
+#leftMenu a:hover  {
+	color:#D6300D;
+	font-weight:bold;
+	text-decoration:none;	
+	}
+
+.bdrinput
+	{
+	font-family:Arial, Verdana, Helvetica, sans-serif; 
+	font-size:12px;
+    border:1px solid #CCCCCC;	
+    }
+
+	.bdrinput_nor
+	{
+	font-family:Arial, Verdana, Helvetica, sans-serif; 
+	font-size:12px;
+    border:1px solid #ffffff;	
+    }
+
+
+	.mypets{ /*header of 1st demo*/
+cursor: hand;
+cursor: pointer;
+padding: 2px 5px;
+border: 1px solid gray;
+background: #E1E1E1;
+}
+
+.openpet{ /*class added to contents of 1st demo when they are open*/
+background: yellow;
+}
+
+.tech a{ /*header of 2nd demo*/
+cursor: hand;
+cursor: pointer;
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:12px; 
+font-weight:bold; 
+font-size:12px; 
+text-align:left; 
+text-transform:uppercase; 
+text-decoration:none; 
+color:#003cad;
+}
+
+
+.openlanguage{ /*class added to contents of 2nd demo when they are open*/
+color: #003cad;
+}
+
+.closedlanguage{ /*class added to contents of 2nd demo when they are closed*/
+color: #003cad;
+}
+
+ul {list-style:none; padding:0;}
+
+
+.wr_white { width:90%;}
+.wr_white .t { background:#FFFFFF url(../inc/m2-l-t.gif) no-repeat left top;}
+.wr_white .b { background:url(../inc/m2-r-t.gif) no-repeat right top;}
+.wr_white .l { background:url(../inc/m2-l-b.gif) no-repeat left bottom;}
+.wr_white .r { background:url(../inc/m2-r-b.gif) no-repeat right bottom;}
+
+.wr_white li { background:url(../inc/wr_white_x.gif) bottom left repeat-x; margin:0 0 0 0; padding:0 0 2px 0; width:155px;}
+.wr_white li a {
+font-family:Verdana, Arial, Helvetica, sans-serif; 
+font-size:12px; 
+	color:#868686;
+	font-weight:bold; 
+	background:url(../inc/grey_bullet.gif) center left no-repeat; line-height:22px; text-decoration:none; padding-left:17px;}
+.wr_white li a:hover { text-decoration:none; color:#D6300D;}

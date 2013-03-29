@@ -1,0 +1,19 @@
+<?php
+
+if($_SERVER['HTTP_HOST'] == 'localhost:8080' || $_SERVER['HTTP_HOST'] == 'silo-it:8080')
+{
+$hostname = "10.4.108.29";
+$database = "amelearn_moodle";
+$username = "root";
+$password = "AE2Vkj4z";
+$dbm = new mysqli($hostname, $username, $password, $database);
+}
+else
+{
+$hostname = "10.4.108.29";
+$database = "amelearn_moodle";
+$username = "root";
+$password = "AE2Vkj4z";
+$dbm = new mysqli($hostname, $username, $password, $database);
+}
+?>
